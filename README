@@ -1,0 +1,34 @@
+
+Please also see the web pages : http://www.cl.cam.ac.uk/research/srg/han/ACS-P35/am-toyesl/
+
+class4: We look at how the memory models can be called in both a TLM
+style and in an RTL style from a TLM style implementation of nominalproc.
+
+Exercise: 
+
+Preferably introduce a high-level model of a new peripheral of your
+own design and a device driver for it into the system.  Each can be
+entirely trivial: it will still demonstrate the coding style.
+
+You may replace one of the memory blocks with your peripheral or else
+add a further bus multiplexor and connect the peripheral along side
+the exisiting memory blocks.  Or, to make it really easy, you can just
+pretend one of the memory blocks is your perhipheral.
+
+Then modify the system in several different ways, showing how to 
+
+
+  1.  call from the C device driver to a C behavioural model of the peripheral directly,  
+
+  2.  call from the C device driver to the perhipheral using TLM, and
+
+  3.  instantiate one or more transactors and use a low-level
+  RTL/net-level form between certain of the components.
+
+
+For 3 you can use the RTL-level memory block as a basis (or directly).
+
+
+Exercise (for the really keen): convert the design to use the
+standardised TLM2.0 generic transport payload. Then modify further to
+use the TLM2.0 convenience sockets.
